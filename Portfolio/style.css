@@ -1,0 +1,485 @@
+*{
+    margin: 0%;
+    padding: 0px;
+    
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+    
+}
+body{
+    color: rgb(0, 0, 0);
+  
+    display: flex;
+    flex-direction: column; 
+    height: 260vh;
+   
+    
+    
+    
+}
+/*                           HEADER  START  ---->>            */
+header{
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    width: 100%;
+    padding: 20px 10%;
+    background: transparent;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;             
+             
+}
+.logo{
+    position: relative;
+    font-size: 1.7em;
+    color:white ;
+    font-weight: 1000;
+    text-shadow: 0 0 10px rgb(4, 50, 255),0 0 10px rgb(0, 89, 255),0 0 10px rgb(7, 247, 255);
+    font-family: "Candal", cursive;
+    transition: .5s;
+    
+}
+header span{
+    color: rgb(0, 0, 0);
+   
+}
+.navbar a{
+    
+    display: inline-block;
+    color: rgb(255, 255, 255);
+    text-shadow: 0 0 10px rgb(27, 247, 255),0 0 10px rgb(35, 211, 255),0 0 10px rgb(0, 195, 255);
+    font-weight: 500;
+    margin-left: 35px;
+    font-size: .9em;
+    transition: .5s;
+    font-family: "Candal", cursive;
+
+}
+.navbar a:hover,.logo:hover{
+    text-shadow: 0 0 5px rgb(255, 251, 0),0 0 5px rgb(229, 255, 0),0 0 5px rgb(255, 251, 0);
+    transform: scale(1.2);
+}
+
+ /*                       <<------------HEADER END                 */
+
+
+/*                  Main-Start   ------>> */
+
+  /*Home ------->> */
+.home{
+    
+    width: 100%;
+    justify-content: space-between;
+    height: 100vh;
+    background: url(https://images.rawpixel.com/image_800/czNmcy1wcml2YXRlL3Jhd3BpeGVsX2ltYWdlcy93ZWJzaXRlX2NvbnRlbnQvbHIvdHAyMzgtYmFja2dyb3VuZC0wMy1rcHFvcjMwMS5qcGc.jpg)no-repeat ;
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    padding: 70px 10% 0;
+    
+    
+}
+.home .pic-bg{
+    background:black;
+    background-position: center;
+    background-size: contain;
+    border-radius: 50%;
+    box-shadow:  -12px 0px 12px 0px  rgb(27, 118, 255),12px 0px 12px 0px  rgb(27, 118, 255), 0px 14px 12px 0px  rgb(178, 10, 255),0px -14px 12px 0px  rgb(178, 10, 255);
+    display: flex;
+    align-items: center;
+    position: absolute;
+    padding: 11% 11% 11%;
+    right: 9%;
+    top:35%;
+    
+    animation: animate 6s  infinite;
+
+
+}
+
+@keyframes animate{
+    0%{
+        transform:rotate(0deg);
+    }
+    0%{
+        transform:rotate(-360deg);
+    }
+}
+.home .pic{
+    background: url(pic2.jpg) no-repeat;
+    background-position: center;
+    background-size: contain;
+    border-radius: 50%;
+   
+    display: flex;
+    align-items: center;
+    position: absolute;
+    padding: 10% 10% 10%;
+    right: 10%;
+    top:37%;
+    z-index: 1;
+   
+}
+.home .pic:hover{
+    transform: scale(.9)
+}
+.home-content{
+  max-width: 600px;
+  text-shadow: 0 0 1.5px white,0 0 1.5px white,0 0 1.5px white;
+  color: rgb(255, 255, 255);
+  font-family: "Cuprum", sans-serif;
+}
+.home-content h1{
+    font-size: 50px;
+}
+.home-content h3{
+    font-size: 36px;
+    font-weight: 700;
+    
+    margin: -3px 0;
+ 
+}
+.home-content span{
+    color:rgb(0, 255, 221);
+    font-size: 50px;
+    font-family: cursive;
+    text-shadow: 0 0 4px rgb(183, 0, 255),0 0 4px rgb(162, 0, 255), 0 0 4px rgb(174, 0, 255);
+}
+.home-content p{
+    font-size: 20px;
+    padding-top: 5px;
+}
+.home-sym a{
+    color: aliceblue;
+    font-size: 1.5em;
+    text-shadow: 0 0 1px white,0 0 1px white,0 0 1px white;
+    margin: 30px 15px 30px 0;
+    align-items: center;
+    justify-content: center;
+    display: inline-flex;
+    width: 40px;
+    height :40px;
+    background: transparent;   
+    border: 3px solid white;
+    border-radius: 50%;
+    padding-left: 10px;
+}
+.home-sym a:hover{
+    background-color: aliceblue;
+    color: rgb(4, 77, 77);
+    text-shadow: 0 0 2px white,0 0 2px white,0 0 2px white;
+}
+.banner{
+    position: absolute;
+     z-index: -1;
+    height: 110vh;
+    width: 100%; 
+    
+}
+
+
+
+@media(min-aspect-ratio : 16/9){
+    .banner {
+        width: 100%;
+        
+        height: 110vh;
+        z-index: -888;
+        border-radius: 5px;
+        
+      
+        
+    }
+}
+/*              <<---------Home      */
+/*              <<---------     MAIN-END       */
+
+
+  /*                  work- Start   ------>> */
+  #work{
+    height: 110vh;
+    
+       
+  }
+  #work h2{
+    font-family: "Candal",cursive;
+    font-size: 2em;
+    width: 100%;
+    background-color: transparent;
+    border-radius: 5px;
+    padding: 20px;
+    margin-top: 10px;
+    margin-left: 00px;
+    text-align: center;
+    color: rgb(62, 123, 173);
+    text-shadow: 0 0 5px rgb(255, 255, 255) , 0 0 5px rgb(255, 255, 255), 0 0 5px rgb(255, 255, 255);
+}
+#work .h2 span{
+    color: rgb(36, 137, 219);
+}
+ .portfolio-content   .projects {
+    height: 95vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    justify-content: center;
+    z-index: 0;
+ }
+
+ .portfolio-content .projects .post {
+    padding: 15px;
+    margin-bottom: 25px;
+ }
+ .projects .post .pst-img{
+    width: 20%;
+    position: relative;
+    float: left;
+    left: 15%;
+     border-radius: 50%;
+     box-shadow: 0 0px 15px rgb(0, 255, 213) , 0 0 15px rgb(255, 255, 255), 0 0 15px rgb(0, 174, 255);
+ }
+ .projects .post .img-ttl{
+    position: relative;
+    float: right;
+    right:30%;
+    top: 30%;
+    font-family: "Candal",cursive;
+    color: black;
+    text-shadow: 0 0 3px white, 0 0 3px white, 0 0 3px white;
+ }
+ .projects .post .m{
+       right: 27%;
+ }
+ .lnks{
+    display: flex;
+    position: relative;
+    left: 40%;
+    margin-top: 5%;
+ }
+.projects .post .links{
+    position: relative;
+    float: right;
+    right: 21%;
+    top :60%;
+    margin-right: 20px;
+    color: rgb(0, 0, 0);
+    font-size: 1.5em;
+    text-shadow: 0 0 1px white,0 0 1px white,0 0 1px white;
+    background: transparent;   
+    border: 3px solid rgb(0, 0, 0);
+    border-radius: 50%;
+    padding: 5px;
+    
+}
+.projects .post .links:hover {
+    border-radius: 50%;
+    padding: 10px;
+    color: rgb(0, 0, 0);
+    text-shadow: 0 0 2px white,0 0 2px white,0 0 2px white;
+}
+
+ /*              <<---------    work- END       */
+
+
+
+
+  /*                Footer  Start   ------>> */
+footer{
+    height: 50vh;
+    background-color: rgb(56, 56, 56);
+    text-align: center;
+    font-family:"Candal", cursive;
+    padding: 30px;
+    font-size: 25px;
+    color: #fff;
+    border-radius: 5px;
+    width: 100%; 
+}
+footer h1{
+    font-size: 2em;
+    padding-bottom: 20px;
+}
+footer h3{
+    font-size: 1em;
+    padding-top: 10px;
+    padding-bottom: 25px;
+}
+footer .links{
+    color: rgb(0, 0, 0);
+    font-size: 1em;
+    text-shadow: 0 0 1px white,0 0 1px white,0 0 1px white;
+    background: transparent;   
+    border: 3px solid rgb(0, 0, 0);
+    border-radius: 50%;
+    padding:7px 7px 7px 7px;
+}
+footer .links:hover{
+    padding: 10px;
+    color: rgb(0, 0, 0);
+    text-shadow: 0 0 2px white,0 0 2px white,0 0 2px white;
+
+}
+.btm{
+    height: 6vh;
+    background: white;
+    text-align: center;
+    padding-top: 12px;
+    font-family: sans-serif;
+     color: #000;
+    font-size: 12px;
+
+            
+}
+.btm a{
+    color: #000;
+}
+ /*              <<---------  Footer   END       */
+
+ @media only screen and (max-width:754px) {
+body{
+    max-width: 754px;
+    min-width: 360px;
+}
+    header{
+        position: fixed;
+        background-color: black;  
+        height: 18vh;
+        border-radius:10px ;
+        width: 100%;
+        left: 0%;
+    }
+header .logo{
+    position: fixed;
+    left: 10%;
+    top :2%;
+
+}
+header nav{
+    position: fixed;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    top: 10%;
+    
+    
+}
+
+
+.home .pic-bg{
+    left: 35%;
+    top: 21%;
+    height: 50px;
+    width: 50px;
+    
+ }
+ .home .pic{
+    left: 36.5%;
+    top: 21%;
+    height: 50px;
+    width: 50px;
+ }
+ 
+.home-content .a{
+    position: absolute;
+    top: 50%;
+    height: 50px;
+    width: 100%;
+    font-size: 25px;
+}
+.home-content .b{
+    position: absolute;
+    top: 58%;
+    height: 50px;
+    width: 100%;
+    font-size: 40px;
+}
+.home-content span{
+    font-size: 20px;
+    position: absolute;
+    top: 67%;
+    height: 50px;
+    width: 100%;
+}
+.home-content .d{
+    position: absolute;
+    top: 74%;
+    height: 50px;
+    width: 100%;
+}
+
+.e{
+    position: absolute;
+    top: 84%;
+    height: 50px;
+    width: 100%;
+}
+#work{
+    background: url(bg2.jpg)no-repeat;
+    background-size: cover;
+    width: 100%;
+    
+    
+}
+#work h2{
+   
+    padding-top: 15%;
+    margin-bottom: -50px;
+
+}
+
+
+@media(min-aspect-ratio : 16/9){
+
+.banner {
+
+width: 90%;
+height: 100vh;
+position: absolute;
+z-index: -888;
+border-radius: 5px;
+}              
+}
+.projects .post .pst-img{
+    
+    width: 40%;
+    position: relative;
+    float: left;
+    left: 5%;
+    
+}
+.projects .post .img-ttl{
+    position: relative;
+    float: right;
+    right:10%;
+    top: 30%;
+}
+.lnks{
+    position: relative;
+    display: flex;
+    
+    left: 20%;
+    margin-top: 7%;
+}
+.btm{
+    position: relative;
+    width: 100%;
+    
+}
+footer h1{
+    font-size: 30px;
+
+
+}
+footer h3{
+    font-size: 20px;
+}
+
+}
+
+
